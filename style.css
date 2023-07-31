@@ -1,0 +1,115 @@
+*
+{
+    word-break: break-all;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+.wrapper
+{
+    height: 100vh;
+    width: 100vw;
+    perspective: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.container
+{
+    object-fit: cover;
+    transform-style: preserve-3d;
+    /* Childrens will take 3d effect*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background,.foreground
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+.background
+{
+    transform: translateZ(-40px);
+    scale: 5.1;
+}
+.foreground
+{
+    scale:3.2;
+    transform: translateZ(-20px);
+}
+h1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10vw;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 5rem;
+}
+
+h2
+{
+    word-break: keep-all;
+    font-size:3rem;
+}
+p
+{
+   font-size: 2rem;
+    background-color: rgb(45,45,45);
+}
+.main_head
+{
+    background-color: rgb(45,45,45);
+    padding: 3rem;
+}
+.main_head p
+{
+    font-size: 1.35rem;
+}
+.g
+{
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: center;
+}
+.des
+{
+    background-color: white;
+    color: black;
+    display: inline;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.3);
+}
+.text
+{
+    font-size:1.35rem;
+    padding: 3rem ;
+}
+.g1
+{
+    background-image: url(biking.webp);
+}
+.g2
+{
+    background-image: url(paragliding.jpg);
+}
+.g3
+{
+    background-image: url(surfing.jpg);
+}
